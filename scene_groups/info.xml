@@ -1,0 +1,17 @@
+﻿
+<!-- http://novosibpano.ru/Plugins/Group_scene_en.html -->
+
+
+Place a folder "scene_groups" in the root folder of the tour.
+<include url="scene_groups/plug_gr/grupp_scene.xml" />
+
+Please note that the folder with the tour "plugins" must contain the file "combobox.xml"
+
+
+
+<!-- http://novosibpano.ru/Plugins/Group_scene_ru.html -->
+
+Поместите папку "scene_groups" в корневую папку с туром.
+<include url="scene_groups/plug_gr/grupp_scene.xml" />
+
+Обратите внимание, в папке с туром в папке "plugins" должен находиться файл "combobox.xml"

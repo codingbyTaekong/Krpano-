@@ -1,0 +1,116 @@
+<krpano>
+	<stickers>
+		<toscene name="scene_p4">
+			<hostick name="add_s001_108" src="add/s001.png" ath="1.0959932223552755" atv="1.2477115428496401" scale="0.2629999999999998" zorder="10" rx="0" ry="-2" rz="0"/>
+			<hostick name="add_s004_510" src="add/s004.png" ath="1.0008360135286694" atv="-22.889455818066963" scale="0.10699999999999965" zorder="13" rx="-3" ry="-1" rz="0"/>
+		</toscene>
+		<toscene name="scene_p5">
+			<hostick name="add_s002_1121" src="add/s002.png" ath="-36.062600698174606" atv="17.775829638822973" scale="0.10399999999999965" zorder="14" rx="-12" ry="31" rz="19"/>
+			<hostick name="add_s003_1531" src="add/s003.png" ath="37.34532825296856" atv="17.239165697763017" scale="0.10399999999999966" zorder="14" rx="-12" ry="-32" rz="-21"/>
+			<hostick name="add_s004_2260" src="add/s004.png" ath="-32.905584632655234" atv="8.919030017220086" scale="0.08299999999999963" zorder="14" rx="-23" ry="33" rz="18"/>
+			<hostick name="add_s004_2664" src="add/s004.png" ath="34.450744034867" atv="8.651926763054528" scale="0.07699999999999962" zorder="14" rx="-9" ry="-22" rz="-12"/>
+			<hostick name="add_s005_3363" src="add/s005.png" ath="1.1954443258372294" atv="-9.81702095689232" scale="0.07399999999999962" zorder="14" rx="0" ry="0" rz="0"/>
+			<hostick name="add_s005_3467" src="add/s005.png" ath="-17.43131309202562" atv="-9.82261152614198" scale="0.06799999999999962" zorder="14" rx="-4" ry="-11" rz="0"/>
+			<hostick name="add_s005_3591" src="add/s005.png" ath="18.886719297871593" atv="-9.807028074069867" scale="0.07099999999999962" zorder="14" rx="0" ry="10" rz="0"/>
+		</toscene>
+		<toscene name="scene_p6">
+			<hostick name="add_s002_1121" src="add/s002.png" ath="-36.062600698174606" atv="17.775829638822973" scale="0.10399999999999965" zorder="14" rx="-12" ry="31" rz="19"/>
+			<hostick name="add_s003_1531" src="add/s003.png" ath="37.34532825296856" atv="17.239165697763017" scale="0.10399999999999966" zorder="14" rx="-12" ry="-32" rz="-21"/>
+			<hostick name="add_s004_2260" src="add/s004.png" ath="-32.905584632655234" atv="8.919030017220086" scale="0.08299999999999963" zorder="14" rx="-23" ry="33" rz="18"/>
+			<hostick name="add_s004_2664" src="add/s004.png" ath="34.450744034867" atv="8.651926763054528" scale="0.07699999999999962" zorder="14" rx="-9" ry="-22" rz="-12"/>
+			<hostick name="add_s005_3363" src="add/s005.png" ath="1.1954443258372294" atv="-9.81702095689232" scale="0.07399999999999962" zorder="14" rx="0" ry="0" rz="0"/>
+			<hostick name="add_s005_3467" src="add/s005.png" ath="-17.43131309202562" atv="-9.82261152614198" scale="0.06799999999999962" zorder="14" rx="-4" ry="-11" rz="0"/>
+			<hostick name="add_s005_3591" src="add/s005.png" ath="18.886719297871593" atv="-9.807028074069867" scale="0.07099999999999962" zorder="14" rx="0" ry="10" rz="0"/>
+		</toscene>
+		<toscene name="scene_p7">
+			<hostick name="add_s002_1121" src="add/s002.png" ath="-36.062600698174606" atv="17.775829638822973" scale="0.10399999999999965" zorder="14" rx="-12" ry="31" rz="19"/>
+			<hostick name="add_s003_1531" src="add/s003.png" ath="37.34532825296856" atv="17.239165697763017" scale="0.10399999999999966" zorder="14" rx="-12" ry="-32" rz="-21"/>
+			<hostick name="add_s004_2260" src="add/s004.png" ath="-32.905584632655234" atv="8.919030017220086" scale="0.08299999999999963" zorder="14" rx="-23" ry="33" rz="18"/>
+			<hostick name="add_s004_2664" src="add/s004.png" ath="34.450744034867" atv="8.651926763054528" scale="0.07699999999999962" zorder="14" rx="-9" ry="-22" rz="-12"/>
+			<hostick name="add_s005_3363" src="add/s005.png" ath="1.1954443258372294" atv="-9.81702095689232" scale="0.07399999999999962" zorder="14" rx="0" ry="0" rz="0"/>
+			<hostick name="add_s005_3467" src="add/s005.png" ath="-17.43131309202562" atv="-9.82261152614198" scale="0.06799999999999962" zorder="14" rx="-4" ry="-11" rz="0"/>
+			<hostick name="add_s005_3591" src="add/s005.png" ath="18.886719297871593" atv="-9.807028074069867" scale="0.07099999999999962" zorder="14" rx="0" ry="10" rz="0"/>
+		</toscene>
+		<toscene name="scene_p8">
+			<hostick name="add_s002_1121" src="add/s002.png" ath="-36.062600698174606" atv="17.775829638822973" scale="0.10399999999999965" zorder="14" rx="-12" ry="31" rz="19"/>
+			<hostick name="add_s003_1531" src="add/s003.png" ath="37.34532825296856" atv="17.239165697763017" scale="0.10399999999999966" zorder="14" rx="-12" ry="-32" rz="-21"/>
+			<hostick name="add_s004_2260" src="add/s004.png" ath="-32.905584632655234" atv="8.919030017220086" scale="0.08299999999999963" zorder="14" rx="-23" ry="33" rz="18"/>
+			<hostick name="add_s004_2664" src="add/s004.png" ath="34.450744034867" atv="8.651926763054528" scale="0.07699999999999962" zorder="14" rx="-9" ry="-22" rz="-12"/>
+			<hostick name="add_s005_3363" src="add/s005.png" ath="1.1954443258372294" atv="-9.81702095689232" scale="0.07399999999999962" zorder="14" rx="0" ry="0" rz="0"/>
+			<hostick name="add_s005_3467" src="add/s005.png" ath="-17.43131309202562" atv="-9.82261152614198" scale="0.06799999999999962" zorder="14" rx="-4" ry="-11" rz="0"/>
+			<hostick name="add_s005_3591" src="add/s005.png" ath="18.886719297871593" atv="-9.807028074069867" scale="0.07099999999999962" zorder="14" rx="0" ry="10" rz="0"/>
+		</toscene>
+		<toscene name="scene_p9">
+			<hostick name="add_s002_1121" src="add/s002.png" ath="-36.062600698174606" atv="17.775829638822973" scale="0.10399999999999965" zorder="14" rx="-12" ry="31" rz="19"/>
+			<hostick name="add_s003_1531" src="add/s003.png" ath="37.34532825296856" atv="17.239165697763017" scale="0.10399999999999966" zorder="14" rx="-12" ry="-32" rz="-21"/>
+			<hostick name="add_s004_2260" src="add/s004.png" ath="-32.905584632655234" atv="8.919030017220086" scale="0.08299999999999963" zorder="14" rx="-23" ry="33" rz="18"/>
+			<hostick name="add_s004_2664" src="add/s004.png" ath="34.450744034867" atv="8.651926763054528" scale="0.07699999999999962" zorder="14" rx="-9" ry="-22" rz="-12"/>
+			<hostick name="add_s005_3363" src="add/s005.png" ath="1.1954443258372294" atv="-9.81702095689232" scale="0.07399999999999962" zorder="14" rx="0" ry="0" rz="0"/>
+			<hostick name="add_s005_3467" src="add/s005.png" ath="-17.43131309202562" atv="-9.82261152614198" scale="0.06799999999999962" zorder="14" rx="-4" ry="-11" rz="0"/>
+			<hostick name="add_s005_3591" src="add/s005.png" ath="18.886719297871593" atv="-9.807028074069867" scale="0.07099999999999962" zorder="14" rx="0" ry="10" rz="0"/>
+		</toscene>
+		<toscene name="scene_p10">
+			<hostick name="add_s002_1121" src="add/s002.png" ath="-36.062600698174606" atv="17.775829638822973" scale="0.10399999999999965" zorder="14" rx="-12" ry="31" rz="19"/>
+			<hostick name="add_s003_1531" src="add/s003.png" ath="37.34532825296856" atv="17.239165697763017" scale="0.10399999999999966" zorder="14" rx="-12" ry="-32" rz="-21"/>
+			<hostick name="add_s004_2260" src="add/s004.png" ath="-32.905584632655234" atv="8.919030017220086" scale="0.08299999999999963" zorder="14" rx="-23" ry="33" rz="18"/>
+			<hostick name="add_s004_2664" src="add/s004.png" ath="34.450744034867" atv="8.651926763054528" scale="0.07699999999999962" zorder="14" rx="-9" ry="-22" rz="-12"/>
+			<hostick name="add_s005_3363" src="add/s005.png" ath="1.1954443258372294" atv="-9.81702095689232" scale="0.07399999999999962" zorder="14" rx="0" ry="0" rz="0"/>
+			<hostick name="add_s005_3467" src="add/s005.png" ath="-17.43131309202562" atv="-9.82261152614198" scale="0.06799999999999962" zorder="14" rx="-4" ry="-11" rz="0"/>
+			<hostick name="add_s005_3591" src="add/s005.png" ath="18.886719297871593" atv="-9.807028074069867" scale="0.07099999999999962" zorder="14" rx="0" ry="10" rz="0"/>
+		</toscene>
+		<toscene name="scene_p13">
+			<hostick name="add_s002_541" src="add/s002.png" ath="-38.972454304994585" atv="27.11809437111844" scale="0.10099999999999965" zorder="10" rx="32" ry="37" rz="-1"/>
+			<hostick name="add_s003_12191" src="add/s003.png" ath="40.57969293988725" atv="26.765084900398378" scale="0.10399999999999965" zorder="9" rx="29" ry="-39" rz="0"/>
+			<hostick name="add_s005_13888" src="add/s005.png" ath="0.5288188050610074" atv="-7.57274366217415" scale="0.07999999999999963" zorder="10" rx="0" ry="0" rz="0"/>
+			<hostick name="add_s005_14076" src="add/s005.png" ath="-17.31795470421116" atv="-7.484944988378965" scale="0.07999999999999963" zorder="10" rx="0" ry="-22" rz="0"/>
+			<hostick name="add_s005_14574" src="add/s005.png" ath="18.72246470161724" atv="-7.490145783831098" scale="0.07999999999999963" zorder="10" rx="0" ry="15" rz="0"/>
+			<hostick name="add_s004_15952" src="add/s004.png" ath="-38.472220090148426" atv="19.073583748636377" scale="0.08899999999999963" zorder="10" rx="25" ry="31" rz="0"/>
+			<hostick name="add_s004_17496" src="add/s004.png" ath="40.71538200309442" atv="18.142291291436994" scale="0.08299999999999963" zorder="10" rx="23" ry="-36" rz="0"/>
+		</toscene>
+		<toscene name="scene_p14">
+			<hostick name="add_s002_541" src="add/s002.png" ath="-38.972454304994585" atv="27.11809437111844" scale="0.10099999999999965" zorder="10" rx="32" ry="37" rz="-1"/>
+			<hostick name="add_s003_12191" src="add/s003.png" ath="40.57969293988725" atv="26.765084900398378" scale="0.10399999999999965" zorder="9" rx="29" ry="-39" rz="0"/>
+			<hostick name="add_s005_13888" src="add/s005.png" ath="0.5288188050610074" atv="-7.57274366217415" scale="0.07999999999999963" zorder="10" rx="0" ry="0" rz="0"/>
+			<hostick name="add_s005_14076" src="add/s005.png" ath="-17.31795470421116" atv="-7.484944988378965" scale="0.07999999999999963" zorder="10" rx="0" ry="-22" rz="0"/>
+			<hostick name="add_s005_14574" src="add/s005.png" ath="18.72246470161724" atv="-7.490145783831098" scale="0.07999999999999963" zorder="10" rx="0" ry="15" rz="0"/>
+			<hostick name="add_s004_15952" src="add/s004.png" ath="-38.472220090148426" atv="19.073583748636377" scale="0.08899999999999963" zorder="10" rx="25" ry="31" rz="0"/>
+			<hostick name="add_s004_17496" src="add/s004.png" ath="40.71538200309442" atv="18.142291291436994" scale="0.08299999999999963" zorder="10" rx="23" ry="-36" rz="0"/>
+		</toscene>
+		<toscene name="scene_p15">
+			<hostick name="add_s002_541" src="add/s002.png" ath="-38.972454304994585" atv="27.11809437111844" scale="0.10099999999999965" zorder="10" rx="32" ry="37" rz="-1"/>
+			<hostick name="add_s003_12191" src="add/s003.png" ath="40.57969293988725" atv="26.765084900398378" scale="0.10399999999999965" zorder="9" rx="29" ry="-39" rz="0"/>
+			<hostick name="add_s005_13888" src="add/s005.png" ath="0.5288188050610074" atv="-7.57274366217415" scale="0.07999999999999963" zorder="10" rx="0" ry="0" rz="0"/>
+			<hostick name="add_s005_14076" src="add/s005.png" ath="-17.31795470421116" atv="-7.484944988378965" scale="0.07999999999999963" zorder="10" rx="0" ry="-22" rz="0"/>
+			<hostick name="add_s005_14574" src="add/s005.png" ath="18.72246470161724" atv="-7.490145783831098" scale="0.07999999999999963" zorder="10" rx="0" ry="15" rz="0"/>
+			<hostick name="add_s004_15952" src="add/s004.png" ath="-38.472220090148426" atv="19.073583748636377" scale="0.08899999999999963" zorder="10" rx="25" ry="31" rz="0"/>
+			<hostick name="add_s004_17496" src="add/s004.png" ath="40.71538200309442" atv="18.142291291436994" scale="0.08299999999999963" zorder="10" rx="23" ry="-36" rz="0"/>
+		</toscene>
+		<toscene name="scene_p16">
+			<hostick name="add_s002_541" src="add/s002.png" ath="-38.972454304994585" atv="27.11809437111844" scale="0.10099999999999965" zorder="10" rx="32" ry="37" rz="-1"/>
+			<hostick name="add_s003_12191" src="add/s003.png" ath="40.57969293988725" atv="26.765084900398378" scale="0.10399999999999965" zorder="9" rx="29" ry="-39" rz="0"/>
+			<hostick name="add_s005_13888" src="add/s005.png" ath="0.5288188050610074" atv="-7.57274366217415" scale="0.07999999999999963" zorder="10" rx="0" ry="0" rz="0"/>
+			<hostick name="add_s005_14076" src="add/s005.png" ath="-17.31795470421116" atv="-7.484944988378965" scale="0.07999999999999963" zorder="10" rx="0" ry="-22" rz="0"/>
+			<hostick name="add_s005_14574" src="add/s005.png" ath="18.72246470161724" atv="-7.490145783831098" scale="0.07999999999999963" zorder="10" rx="0" ry="15" rz="0"/>
+			<hostick name="add_s004_15952" src="add/s004.png" ath="-38.472220090148426" atv="19.073583748636377" scale="0.08899999999999963" zorder="10" rx="25" ry="31" rz="0"/>
+			<hostick name="add_s004_17496" src="add/s004.png" ath="40.71538200309442" atv="18.142291291436994" scale="0.08299999999999963" zorder="10" rx="23" ry="-36" rz="0"/>
+		</toscene>
+		<toscene name="scene_p17">
+			<hostick name="add_s002_541" src="add/s002.png" ath="-38.972454304994585" atv="27.11809437111844" scale="0.10099999999999965" zorder="10" rx="32" ry="37" rz="-1"/>
+			<hostick name="add_s003_12191" src="add/s003.png" ath="40.57969293988725" atv="26.765084900398378" scale="0.10399999999999965" zorder="9" rx="29" ry="-39" rz="0"/>
+			<hostick name="add_s005_13888" src="add/s005.png" ath="0.5288188050610074" atv="-7.57274366217415" scale="0.07999999999999963" zorder="10" rx="0" ry="0" rz="0"/>
+			<hostick name="add_s005_14076" src="add/s005.png" ath="-17.31795470421116" atv="-7.484944988378965" scale="0.07999999999999963" zorder="10" rx="0" ry="-22" rz="0"/>
+			<hostick name="add_s005_14574" src="add/s005.png" ath="18.72246470161724" atv="-7.490145783831098" scale="0.07999999999999963" zorder="10" rx="0" ry="15" rz="0"/>
+			<hostick name="add_s004_15952" src="add/s004.png" ath="-38.472220090148426" atv="19.073583748636377" scale="0.08899999999999963" zorder="10" rx="25" ry="31" rz="0"/>
+			<hostick name="add_s004_17496" src="add/s004.png" ath="40.71538200309442" atv="18.142291291436994" scale="0.08299999999999963" zorder="10" rx="23" ry="-36" rz="0"/>
+		</toscene>
+		<toscene name="scene_p18">
+			<hostick name="add_s002_541" src="add/s002.png" ath="-38.972454304994585" atv="27.11809437111844" scale="0.10099999999999965" zorder="10" rx="32" ry="37" rz="-1"/>
+			<hostick name="add_s003_12191" src="add/s003.png" ath="40.57969293988725" atv="26.765084900398378" scale="0.10399999999999965" zorder="9" rx="29" ry="-39" rz="0"/>
+			<hostick name="add_s005_13888" src="add/s005.png" ath="0.5288188050610074" atv="-7.57274366217415" scale="0.07999999999999963" zorder="10" rx="0" ry="0" rz="0"/>
+			<hostick name="add_s005_14076" src="add/s005.png" ath="-17.31795470421116" atv="-7.484944988378965" scale="0.07999999999999963" zorder="10" rx="0" ry="-22" rz="0"/>
+			<hostick name="add_s005_14574" src="add/s005.png" ath="18.72246470161724" atv="-7.490145783831098" scale="0.07999999999999963" zorder="10" rx="0" ry="15" rz="0"/>
+			<hostick name="add_s004_15952" src="add/s004.png" ath="-38.472220090148426" atv="19.073583748636377" scale="0.08899999999999963" zorder="10" rx="25" ry="31" rz="0"/>
+			<hostick name="add_s004_17496" src="add/s004.png" ath="40.71538200309442" atv="18.142291291436994" scale="0.08299999999999963" zorder="10" rx="23" ry="-36" rz="0"/>
+		</toscene>
+	</stickers>
+</krpano>

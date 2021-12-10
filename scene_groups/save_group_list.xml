@@ -1,0 +1,20 @@
+
+<krpano>
+
+  <group_settings  list_name="All scene" 
+ 				   cb_design="vtour" 
+ 				   cb_images="scene_groups/icon/strukt.png" 
+ 				   cb_align="lefttop" 
+ 				   cb_x="5" 
+ 				   cb_y="20" 
+ 					cb_width="150" 
+ 				   cb_zorder="50" 
+ 				   thumb_width="prop" 
+ 				   thumb_height="50" 
+ 		   	  />
+	
+
+	
+
+ 
+</krpano>

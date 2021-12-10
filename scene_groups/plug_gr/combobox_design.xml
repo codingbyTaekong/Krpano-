@@ -1,0 +1,88 @@
+﻿<krpano>
+
+
+	<!-- some custom example designs -->
+	<combobox_design name="rounded" margin="3" open_close_speed="0.25">
+		<style name="combobox_container_style"
+			bgcolor="0xFFFFFF"
+			bgalpha="0.95"
+			bgborder="1 0xFFFFFF 0.5"
+			bgroundedge="5"
+			bgshadow="2 4 20 0x000000 0.5"
+			/>
+		<style name="combobox_marker_style"
+			css="color:#999999;"
+			bg="false"
+			txtshadow=""
+			/>
+		<style name="combobox_item_style"
+			css="color:#222222;"
+			padding="4 4"
+			bg="false"
+			bgcolor="0xCCCCCC"
+			bgalpha="1.0"
+			bgroundedge="3"
+			txtshadow=""
+			onoveritem="set(css, 'color:#2277FF;');"
+			onoutitem="set(css, 'color:#222222;');"
+			/>
+	</combobox_design>
+
+	<combobox_design name="classic" margin="0" open_close_speed="0.25">
+		<style name="combobox_container_style"
+			bgcolor="0xFFFFFF"
+			bgalpha="1.0"
+			bgborder="2 0x333333 0.5"
+			bgroundedge="0"
+			bgshadow=""
+			height="50"
+			/>
+		<style name="combobox_marker_style"
+			css="color:#222222;"
+			bg="false"
+			txtshadow=""
+			/>
+		<style name="combobox_item_style"
+			css="color:#222222;"
+			padding="7"
+			bg="false"
+			bgcolor="0x777777"
+			bgalpha="1.0"
+			bgroundedge="0"
+			txtshadow=""
+			onoveritem="set(bg,true); set(css, 'color:#FFFFFF;');"
+			onoutitem="set(bg,false); set(css, 'color:#222222;');"
+			/>
+	</combobox_design>
+	
+	<combobox_design name="glas" margin="2" open_close_speed="0.25">
+		<style name="combobox_container_style"
+			bgcolor="0xEEEEEE"
+			bgalpha="0.5"
+			bgborder="1 0x333333 0.5"
+			bgroundedge="5"
+			bgshadow="0 4 10 0x000000 0.3"
+			height="50"
+			/>
+		<style name="combobox_marker_style"
+			css="color:#222222;"
+			alpha="0.7"
+			bg="false"
+			txtshadow=""
+			/>
+		<style name="combobox_item_style"
+			css="color:#222222;"
+			padding="4"
+			bg="false"
+			bgborder="1 0x333333 0.0"
+			bgcolor="0xFFFFFF"
+			bgalpha="1"
+			bgroundedge="3"
+			txtshadow="0 0 4 0xFFFFFF 1"
+			onoveritem="set(bg,true); set(bgborder, '1 0x333333 0.5');"
+			onoutitem="set(bg,false); set(bgborder, '1 0x333333 0.0');"
+			/>
+	</combobox_design>
+
+
+</krpano>

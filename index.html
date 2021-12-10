@@ -1,0 +1,442 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>krpano - 33</title>
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<script src="https://kit.fontawesome.com/6c8fcbf7dd.js" crossorigin="anonymous"></script>
+	<style>
+		html {
+			height: 100%;
+		}
+
+		body {
+			height: 100%;
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 16px;
+			color: #FFFFFF;
+			background-color: #000000;
+		}
+		.btnwrap {
+			position: absolute;
+			width: 100%;
+			height: 50px;
+			z-index: 10;
+		}
+		.popup {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 11;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			background-color: rgba(0, 0, 0, 0.4);
+			cursor: pointer;
+		}
+		.popup iframe {
+			width: 90%;
+			height: 80%;
+			display: flex;
+			flex-direction: column;
+			border: none;
+		}
+		.topWrap {
+			width: 90%;
+			height: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			background-color: #FFFFFF;
+		}
+		.canselIconBox {
+			width: 50px;
+			height: 50px;
+			margin-left: auto;
+			border: 1px solid;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+		}
+		.canselIconBox i {
+			font-size: 24px;
+			color: #000;
+		}
+	</style>
+</head>
+
+<body>
+
+	<script src="tour.js"></script>
+	<!-- <div class="btnwrap">
+		<button class="rx">rx</button>
+		<button class="ry">ry</button>
+		<button class="rz">rz</button>
+		<button class="rx">rx</button>
+		<button class="ox">ox</button>
+		<button class="oy">oy</button>
+		<button class="ath">ath</button>
+		<button class="atv">atv</button>
+		<button class="rx-">-rx</button>
+		<button class="ry-">-ry</button>
+		<button class="rz-">-rz</button>
+		<button class="rx-">-rx</button>
+		<button class="ox-">-ox</button>
+		<button class="oy-">-oy</button>
+		<button class="ath-">-ath</button>
+		<button class="atv-">-atv</button>
+	</div> -->
+	
+	<div id="pano" style="width:100%;height:100%;">
+		<noscript>
+			<table style="width:100%;height:100%;">
+				<tr style="vertical-align:middle;">
+					<td>
+						<div style="text-align:center;">ERROR:<br /><br />Javascript not activated<br /><br /></div>
+					</td>
+				</tr>
+			</table>
+		</noscript>
+		<script>
+
+
+			// global krpano interface (will be set in the onready callback)
+			var krpano = null;
+
+			// embed the krpano viewer into the 'pano' div element
+			embedpano({
+				id: "krpanoSWFObject",
+				xml: "tour.xml",
+				target: "pano",
+				consolelog: true,					// trace krpano messages also to the browser console
+				passQueryParameters: true, 		// pass query parameters of the url to krpano
+				onready: krpano_onready_callback
+			});
+
+			// callback function that will be called when krpano is embedded and ready for using
+			function krpano_onready_callback(krpano_interface) {
+				krpano = krpano_interface;
+			}
+
+
+
+
+			// examples (called by the button onclick events)
+
+			function loadpano(xmlname) {
+				if (krpano) {
+					krpano.call("loadpano(" + xmlname + ", null, MERGE, BLEND(0.5));");
+				}
+			}
+
+			// function loadxmlstring() {
+			// 	if (krpano) {
+			// 		var xmlstring =
+			// 			'<krpano>' +
+			// 			'<preview type="grid(cube,64,64,512,0xCCCCCC,0xF6F6F6,0x999999);" />' +
+			// 			'<view hlookat="0" vlookat="0" fov="100" distortion="0.0" />' +
+			// 			'</krpano>';
+
+			// 		krpano.call("loadxml(" + escape(xmlstring) + ", null, MERGE, BLEND(0.5));");
+			// 	}
+			// }
+
+			// function randomview_set() {
+			// 	if (krpano) {
+			// 		krpano.set("view.hlookat", Math.random() * 360.0 - 180.0);
+			// 		krpano.set("view.vlookat", Math.random() * 180.0 - 90.0);
+			// 		krpano.set("view.fov", 80.0 + Math.random() * 100.0);
+			// 		krpano.set("view.distortion", Math.random() * 1.0);
+			// 	}
+			// }
+
+			// function randomview_lookto() {
+			// 	if (krpano) {
+			// 		krpano.call("lookto(" + (Math.random() * 360.0 - 180.0) + "," + (Math.random() * 180.0 - 90.0) + "," + (80.0 + Math.random() * 100.0) + ")");
+			// 	}
+			// }
+
+			// function get_current_view() {
+			// 	if (krpano) {
+			// 		var hlookat = krpano.get("view.hlookat");
+			// 		var vlookat = krpano.get("view.vlookat");
+			// 		var fov = krpano.get("view.fov");
+			// 		var distortion = krpano.get("view.distortion");
+			// 		document.getElementById("currentview").innerHTML =
+			// 			'hlookat="' + hlookat.toFixed(2) + '" ' +
+			// 			'vlookat="' + vlookat.toFixed(2) + '" ' +
+			// 			'fov="' + fov.toFixed(2) + '" ' +
+			// 			'distortion="' + distortion.toFixed(2) + '"';
+			// 	}
+			// }
+
+			const hotSpotList = [
+				{
+					id : "hotspot_1",
+					includeingPano : "scene_01",
+					targetPano : "scene_02",
+					img : '',
+					type : "teleport",
+					position : {
+						ath : -25,
+						atv : +15
+					},
+					actionUrl : "https://vr.gtiexpo.org/product/?id=9435CD7EDADF72966DF92FED71CC18A0&type=01"
+				},
+				{
+					id : "hotspot_2",
+					includeingPano : "scene_01",
+					targetPano : "scene_03",
+					img : '',
+					type : "teleport",
+					position : {
+						ath : 30,
+						atv : +15
+					},
+					actionUrl : "https://vr.gtiexpo.org/product/?id=9435CD7EDADF72966DF92FED71CC18A0&type=02"
+				},
+				{
+					id : "hotspot_3",
+					includeingPano : "scene_02",
+					targetPano : "scene_01",
+					img : 'detail.png',
+					type : "popup",
+					size : {
+						width : 150,
+						height : 50
+					},
+					position : {
+						ath : 0,
+						atv : 0,
+						ox : -222,
+						oy : 129
+					},
+					actionUrl : "https://vr.gtiexpo.org/product/?id=9435CD7EDADF72966DF92FED71CC18A0&type=03"
+				}
+			]
+
+			function OnloadPOI(sceneName) {
+				const currentScene = hotSpotList.filter(hotspot => sceneName === hotspot.includeingPano ? true : false)
+				currentScene.map(hotspot=> add_hotspot(hotspot))
+			}
+			// plus
+			// document.querySelector('.rx').addEventListener('click',function(){
+			// 	let currentRx = krpano.get("hotspot['hotspot_3'].rx")
+			// 	let nextRx = currentRx + 3
+			// 	krpano.set("hotspot['hotspot_3'].rx", nextRx);
+			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+			// 	console.log(krpano.get("hotspot['hotspot_3'].rx"))
+			// })
+			// document.querySelector('.ry').addEventListener('click',function(){
+			// 	let currentRx = krpano.get("hotspot['hotspot_3'].ry")
+			// 	let nextRx = currentRx + 3
+			// 	krpano.set("hotspot['hotspot_3'].ry", nextRx);
+			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+			// 	console.log(krpano.get("hotspot['hotspot_3'].ry"))
+			// })
+
+			// document.querySelector('.rz').addEventListener('click',function(){
+			// 	let currentRx = krpano.get("hotspot['hotspot_3'].rz")
+			// 	let nextRx = currentRx + 3
+			// 	krpano.set("hotspot['hotspot_3'].rz", nextRx);
+			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+			// 	console.log(krpano.get("hotspot['hotspot_3'].rz"))
+			// })
+			// document.querySelector('.ox').addEventListener('click',function(){
+			// 	let currentRx = krpano.get("hotspot['hotspot_3'].ox")
+			// 	let nextRx = currentRx + 3
+			// 	krpano.set("hotspot['hotspot_3'].ox", nextRx);
+			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+			// 	console.log(krpano.get("hotspot['hotspot_3'].ox"))
+			// })
+			// document.querySelector('.oy').addEventListener('click',function(){
+			// 	let currentRx = krpano.get("hotspot['hotspot_3'].oy")
+			// 	let nextRx = currentRx + 3
+			// 	krpano.set("hotspot['hotspot_3'].oy", nextRx);
+			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+			// 	console.log(krpano.get("hotspot['hotspot_3'].oy"))
+			// })
+			// document.querySelector('.ath').addEventListener('click',function(){
+			// 	let currentRx = krpano.get("hotspot['hotspot_3'].ath")
+			// 	let nextRx = currentRx + 3
+			// 	krpano.set("hotspot['hotspot_3'].ath", nextRx);
+			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+			// 	console.log(krpano.get("hotspot['hotspot_3'].ath"))
+			// })
+			// document.querySelector('.atv').addEventListener('click',function(){
+			// 	let currentRx = krpano.get("hotspot['hotspot_3'].atv")
+			// 	let nextRx = currentRx + 3
+			// 	krpano.set("hotspot['hotspot_3'].atv", nextRx);
+			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+			// 	console.log(krpano.get("hotspot['hotspot_3'].atv"))
+			// })
+
+			// //minus 
+			// document.querySelector('.rx-').addEventListener('click',function(){
+			// 	let currentRx = krpano.get("hotspot['hotspot_3'].rx")
+			// 	let nextRx = currentRx - 3
+			// 	krpano.set("hotspot['hotspot_3'].rx", nextRx);
+			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+			// 	console.log(krpano.get("hotspot['hotspot_3'].rx"))
+			// })
+			// document.querySelector('.ry-').addEventListener('click',function(){
+			// 	let currentRx = krpano.get("hotspot['hotspot_3'].ry")
+			// 	let nextRx = currentRx - 3
+			// 	krpano.set("hotspot['hotspot_3'].ry", nextRx);
+			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+			// 	console.log(krpano.get("hotspot['hotspot_3'].ry"))
+			// })
+
+			// document.querySelector('.rz-').addEventListener('click',function(){
+			// 	let currentRx = krpano.get("hotspot['hotspot_3'].rz")
+			// 	let nextRx = currentRx - 3
+			// 	krpano.set("hotspot['hotspot_3'].rz", nextRx);
+			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+			// 	console.log(krpano.get("hotspot['hotspot_3'].rz"))
+			// })
+			// document.querySelector('.ox-').addEventListener('click',function(){
+			// 	let currentRx = krpano.get("hotspot['hotspot_3'].ox")
+			// 	let nextRx = currentRx - 3
+			// 	krpano.set("hotspot['hotspot_3'].ox", nextRx);
+			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+			// 	console.log(krpano.get("hotspot['hotspot_3'].ox"))
+			// })
+			// document.querySelector('.oy-').addEventListener('click',function(){
+			// 	let currentRx = krpano.get("hotspot['hotspot_3'].oy")
+			// 	let nextRx = currentRx - 3
+			// 	krpano.set("hotspot['hotspot_3'].oy", nextRx);
+			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+			// 	console.log(krpano.get("hotspot['hotspot_3'].oy"))
+			// })
+			// document.querySelector('.ath-').addEventListener('click',function(){
+			// 	let currentRx = krpano.get("hotspot['hotspot_3'].ath")
+			// 	let nextRx = currentRx - 3
+			// 	krpano.set("hotspot['hotspot_3'].ath", nextRx);
+			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+			// 	console.log(krpano.get("hotspot['hotspot_3'].ath"))
+			// })
+			// document.querySelector('.atv-').addEventListener('click',function(){
+			// 	let currentRx = krpano.get("hotspot['hotspot_3'].atv")
+			// 	let nextRx = currentRx - 3
+			// 	krpano.set("hotspot['hotspot_3'].atv", nextRx);
+			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+			// 	console.log(krpano.get("hotspot['hotspot_3'].atv"))
+			// })
+
+			function add_hotspot(hotspot) {
+				//하나의 객체가 들어옴
+				const {id,type, position, actionUrl, targetPano, img, size} = hotspot;
+				if (krpano) {
+					const {ath,atv,ox,oy} = position
+					let hs_name = "hs" + ((Date.now() + Math.random()) | 0);	// create unique/randome name (나중에 poi editor에서 쓰일 예정)
+					krpano.call("addhotspot(" + id + ")");
+					if (img === "") {
+						krpano.set("hotspot[" + id + "].url", "./skin/vtourskin_hotspot.png");
+						krpano.set("hotspot[" + id + "].ath", ath);
+						krpano.set("hotspot[" + id + "].scale", "0.7");
+						krpano.set("hotspot[" + id + "].atv", atv);
+						krpano.set("hotspot[" + id + "].distorted", true);
+					} else {
+						const {width, height} = size
+						krpano.set("hotspot[" + id + "].url", `./skin/${img}`);
+						krpano.set("hotspot[" + id + "].ath", ath);
+						krpano.set("hotspot[" + id + "].atv", atv);
+						krpano.set("hotspot[" + id + "].width", width);
+						krpano.set("hotspot[" + id + "].height", height);
+						krpano.set("hotspot[" + id + "].ox", ox);
+						krpano.set("hotspot[" + id + "].oy", oy);
+						krpano.set("hotspot[" + id + "].distorted", true);
+					}
+					switch (type) {
+						case "popup":
+							krpano.set("hotspot[" + id + "].onclick", function (hs) {
+								showPopup(actionUrl)
+							}.bind(null, id));
+							break;
+						case "teleport":
+						krpano.set("hotspot[" + id + "].onclick", function (hs) {
+							krpano.call(`loadscene(${targetPano}, null, MERGE, BLEND(0.35))`);
+							}.bind(null, id));
+						default:
+							break;
+					}
+				}
+			}
+			// type === popup hotspot 클릭 이벤트
+			function showPopup(url) {
+				const container = document.createElement('div');
+				container.classList.add('popup');
+				const topWrap = document.createElement('div');
+				topWrap.classList.add('topWrap');
+				const canselIconBox = document.createElement('div');
+				canselIconBox.classList.add('canselIconBox');
+				const canselIcon = document.createElement('i');
+				canselIcon.classList.add('fal');
+				canselIcon.classList.add('fa-times');
+				canselIconBox.appendChild(canselIcon);
+				topWrap.appendChild(canselIconBox)
+				const iframe = document.createElement('iframe');
+				iframe.src = url;
+				container.appendChild(topWrap);
+				container.appendChild(iframe);
+				document.querySelector('body').appendChild(container);
+				canselIconBox.addEventListener('click',function(){
+					container.remove()
+				})
+			}
+			// function remove_all_hotspots() {
+			// 	if (krpano) {
+			// 		krpano.call("loop(hotspot.count GT 0, removehotspot(0) );");
+			// 	}
+			// }
+
+			// var track_mouse_enabled = false;
+			// var track_mouse_interval_id = null;
+
+			// function track_mouse_interval_callback() {
+			// 	//마우스 위치에 poi생성할 때 쓰임
+			// 	var mx = krpano.get("mouse.x");
+			// 	var my = krpano.get("mouse.y");
+			// 	var pnt = krpano.screentosphere(mx, my);
+			// 	var h = pnt.x;
+			// 	var v = pnt.y;
+			// 	document.getElementById("mousepos").innerHTML = 'x="' + mx + '" y="' + my + '" ath="' + h.toFixed(2) + '" atv="' + v.toFixed(2) + '"';
+			// }
+
+			// function track_mouse() {
+			// 	if (krpano) {
+			// 		if (track_mouse_enabled == false) {
+			// 			// enable - call 60 times per second
+			// 			track_mouse_interval_id = setInterval(track_mouse_interval_callback, 1000.0 / 60.0);
+
+			// 			track_mouse_enabled = true;
+			// 		}
+			// 		else {
+			// 			// disable
+			// 			clearInterval(track_mouse_interval_id);
+			// 			document.getElementById("mousepos").innerHTML = "";
+
+			// 			track_mouse_enabled = false;
+			// 		}
+			// 	}
+			// }
+
+		</script>
+	</div>
+
+</body>
+
+</html>
