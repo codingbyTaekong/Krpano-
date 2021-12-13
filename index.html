@@ -94,7 +94,7 @@
 <body>
 
 	<script src="tour.js"></script>
-	<!-- <div class="btnwrap">
+	<div class="btnwrap">
 		<button class="rx">rx</button>
 		<button class="ry">ry</button>
 		<button class="rz">rz</button>
@@ -111,7 +111,7 @@
 		<button class="oy-">-oy</button>
 		<button class="ath-">-ath</button>
 		<button class="atv-">-atv</button>
-	</div> -->
+	</div>
 	
 	<div id="pano" style="width:100%;height:100%;">
 		<noscript>
@@ -203,6 +203,10 @@
 					targetPano : "scene_02",
 					img : '',
 					type : "teleport",
+					size : {
+						width : 0,
+						height : 0
+					},
 					position : {
 						ath : -25,
 						atv : +15
@@ -215,6 +219,10 @@
 					targetPano : "scene_03",
 					img : '',
 					type : "teleport",
+					size : {
+						width : 0,
+						height : 0
+					},
 					position : {
 						ath : 30,
 						atv : +15
@@ -238,6 +246,24 @@
 						oy : 129
 					},
 					actionUrl : "https://vr.gtiexpo.org/product/?id=9435CD7EDADF72966DF92FED71CC18A0&type=03"
+				},
+				{
+					id : "hotspot_4",
+					includeingPano : "scene_02",
+					targetPano : "scene_01",
+					img : 'test.png',
+					type : "sticker",
+					size : {
+						width : 720,
+						height : 410
+					},
+					position : {
+						ath : 0,
+						atv : 0,
+						ox : 5,
+						oy : 60
+					},
+					actionUrl : ""
 				}
 			]
 
@@ -246,144 +272,160 @@
 				currentScene.map(hotspot=> add_hotspot(hotspot))
 			}
 			// plus
-			// document.querySelector('.rx').addEventListener('click',function(){
-			// 	let currentRx = krpano.get("hotspot['hotspot_3'].rx")
-			// 	let nextRx = currentRx + 3
-			// 	krpano.set("hotspot['hotspot_3'].rx", nextRx);
-			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
-			// 	console.log(krpano.get("hotspot['hotspot_3'].rx"))
-			// })
-			// document.querySelector('.ry').addEventListener('click',function(){
-			// 	let currentRx = krpano.get("hotspot['hotspot_3'].ry")
-			// 	let nextRx = currentRx + 3
-			// 	krpano.set("hotspot['hotspot_3'].ry", nextRx);
-			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
-			// 	console.log(krpano.get("hotspot['hotspot_3'].ry"))
-			// })
+			document.querySelector('.rx').addEventListener('click',function(){
+				let currentRx = krpano.get("hotspot['hotspot_3'].rx")
+				let nextRx = currentRx + 3
+				krpano.set("hotspot['hotspot_3'].rx", nextRx);
+				// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+				console.log(krpano.get("hotspot['hotspot_3'].rx"))
+			})
+			document.querySelector('.ry').addEventListener('click',function(){
+				let currentRx = krpano.get("hotspot['hotspot_3'].ry")
+				let nextRx = currentRx + 3
+				krpano.set("hotspot['hotspot_3'].ry", nextRx);
+				// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+				console.log(krpano.get("hotspot['hotspot_3'].ry"))
+			})
 
-			// document.querySelector('.rz').addEventListener('click',function(){
-			// 	let currentRx = krpano.get("hotspot['hotspot_3'].rz")
-			// 	let nextRx = currentRx + 3
-			// 	krpano.set("hotspot['hotspot_3'].rz", nextRx);
-			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
-			// 	console.log(krpano.get("hotspot['hotspot_3'].rz"))
-			// })
-			// document.querySelector('.ox').addEventListener('click',function(){
-			// 	let currentRx = krpano.get("hotspot['hotspot_3'].ox")
-			// 	let nextRx = currentRx + 3
-			// 	krpano.set("hotspot['hotspot_3'].ox", nextRx);
-			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
-			// 	console.log(krpano.get("hotspot['hotspot_3'].ox"))
-			// })
-			// document.querySelector('.oy').addEventListener('click',function(){
-			// 	let currentRx = krpano.get("hotspot['hotspot_3'].oy")
-			// 	let nextRx = currentRx + 3
-			// 	krpano.set("hotspot['hotspot_3'].oy", nextRx);
-			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
-			// 	console.log(krpano.get("hotspot['hotspot_3'].oy"))
-			// })
-			// document.querySelector('.ath').addEventListener('click',function(){
-			// 	let currentRx = krpano.get("hotspot['hotspot_3'].ath")
-			// 	let nextRx = currentRx + 3
-			// 	krpano.set("hotspot['hotspot_3'].ath", nextRx);
-			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
-			// 	console.log(krpano.get("hotspot['hotspot_3'].ath"))
-			// })
-			// document.querySelector('.atv').addEventListener('click',function(){
-			// 	let currentRx = krpano.get("hotspot['hotspot_3'].atv")
-			// 	let nextRx = currentRx + 3
-			// 	krpano.set("hotspot['hotspot_3'].atv", nextRx);
-			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
-			// 	console.log(krpano.get("hotspot['hotspot_3'].atv"))
-			// })
+			document.querySelector('.rz').addEventListener('click',function(){
+				let currentRx = krpano.get("hotspot['hotspot_3'].rz")
+				let nextRx = currentRx + 3
+				krpano.set("hotspot['hotspot_3'].rz", nextRx);
+				// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+				console.log(krpano.get("hotspot['hotspot_3'].rz"))
+			})
+			document.querySelector('.ox').addEventListener('click',function(){
+				let currentRx = krpano.get("hotspot['hotspot_3'].ox")
+				let nextRx = currentRx + 3
+				krpano.set("hotspot['hotspot_3'].ox", nextRx);
+				// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+				console.log(krpano.get("hotspot['hotspot_3'].ox"))
+			})
+			document.querySelector('.oy').addEventListener('click',function(){
+				let currentRx = krpano.get("hotspot['hotspot_3'].oy")
+				let nextRx = currentRx + 3
+				krpano.set("hotspot['hotspot_3'].oy", nextRx);
+				// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+				console.log(krpano.get("hotspot['hotspot_3'].oy"))
+			})
+			document.querySelector('.ath').addEventListener('click',function(){
+				let currentRx = krpano.get("hotspot['hotspot_3'].ath")
+				let nextRx = currentRx + 3
+				krpano.set("hotspot['hotspot_3'].ath", nextRx);
+				// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+				console.log(krpano.get("hotspot['hotspot_3'].ath"))
+			})
+			document.querySelector('.atv').addEventListener('click',function(){
+				let currentRx = krpano.get("hotspot['hotspot_3'].atv")
+				let nextRx = currentRx + 3
+				krpano.set("hotspot['hotspot_3'].atv", nextRx);
+				// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+				console.log(krpano.get("hotspot['hotspot_3'].atv"))
+			})
 
-			// //minus 
-			// document.querySelector('.rx-').addEventListener('click',function(){
-			// 	let currentRx = krpano.get("hotspot['hotspot_3'].rx")
-			// 	let nextRx = currentRx - 3
-			// 	krpano.set("hotspot['hotspot_3'].rx", nextRx);
-			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
-			// 	console.log(krpano.get("hotspot['hotspot_3'].rx"))
-			// })
-			// document.querySelector('.ry-').addEventListener('click',function(){
-			// 	let currentRx = krpano.get("hotspot['hotspot_3'].ry")
-			// 	let nextRx = currentRx - 3
-			// 	krpano.set("hotspot['hotspot_3'].ry", nextRx);
-			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
-			// 	console.log(krpano.get("hotspot['hotspot_3'].ry"))
-			// })
+			//minus 
+			document.querySelector('.rx-').addEventListener('click',function(){
+				let currentRx = krpano.get("hotspot['hotspot_3'].rx")
+				let nextRx = currentRx - 3
+				krpano.set("hotspot['hotspot_3'].rx", nextRx);
+				// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+				console.log(krpano.get("hotspot['hotspot_3'].rx"))
+			})
+			document.querySelector('.ry-').addEventListener('click',function(){
+				let currentRx = krpano.get("hotspot['hotspot_3'].ry")
+				let nextRx = currentRx - 3
+				krpano.set("hotspot['hotspot_3'].ry", nextRx);
+				// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+				console.log(krpano.get("hotspot['hotspot_3'].ry"))
+			})
 
-			// document.querySelector('.rz-').addEventListener('click',function(){
-			// 	let currentRx = krpano.get("hotspot['hotspot_3'].rz")
-			// 	let nextRx = currentRx - 3
-			// 	krpano.set("hotspot['hotspot_3'].rz", nextRx);
-			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
-			// 	console.log(krpano.get("hotspot['hotspot_3'].rz"))
-			// })
-			// document.querySelector('.ox-').addEventListener('click',function(){
-			// 	let currentRx = krpano.get("hotspot['hotspot_3'].ox")
-			// 	let nextRx = currentRx - 3
-			// 	krpano.set("hotspot['hotspot_3'].ox", nextRx);
-			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
-			// 	console.log(krpano.get("hotspot['hotspot_3'].ox"))
-			// })
-			// document.querySelector('.oy-').addEventListener('click',function(){
-			// 	let currentRx = krpano.get("hotspot['hotspot_3'].oy")
-			// 	let nextRx = currentRx - 3
-			// 	krpano.set("hotspot['hotspot_3'].oy", nextRx);
-			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
-			// 	console.log(krpano.get("hotspot['hotspot_3'].oy"))
-			// })
-			// document.querySelector('.ath-').addEventListener('click',function(){
-			// 	let currentRx = krpano.get("hotspot['hotspot_3'].ath")
-			// 	let nextRx = currentRx - 3
-			// 	krpano.set("hotspot['hotspot_3'].ath", nextRx);
-			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
-			// 	console.log(krpano.get("hotspot['hotspot_3'].ath"))
-			// })
-			// document.querySelector('.atv-').addEventListener('click',function(){
-			// 	let currentRx = krpano.get("hotspot['hotspot_3'].atv")
-			// 	let nextRx = currentRx - 3
-			// 	krpano.set("hotspot['hotspot_3'].atv", nextRx);
-			// 	// currentRx = krpano.get("hotspot['hotspot_3'].rx")
-			// 	console.log(krpano.get("hotspot['hotspot_3'].atv"))
-			// })
+			document.querySelector('.rz-').addEventListener('click',function(){
+				let currentRx = krpano.get("hotspot['hotspot_3'].rz")
+				let nextRx = currentRx - 3
+				krpano.set("hotspot['hotspot_3'].rz", nextRx);
+				// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+				console.log(krpano.get("hotspot['hotspot_3'].rz"))
+			})
+			document.querySelector('.ox-').addEventListener('click',function(){
+				let currentRx = krpano.get("hotspot['hotspot_3'].ox")
+				let nextRx = currentRx - 3
+				krpano.set("hotspot['hotspot_3'].ox", nextRx);
+				// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+				console.log(krpano.get("hotspot['hotspot_3'].ox"))
+			})
+			document.querySelector('.oy-').addEventListener('click',function(){
+				let currentRx = krpano.get("hotspot['hotspot_3'].oy")
+				let nextRx = currentRx - 3
+				krpano.set("hotspot['hotspot_3'].oy", nextRx);
+				// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+				console.log(krpano.get("hotspot['hotspot_3'].oy"))
+			})
+			document.querySelector('.ath-').addEventListener('click',function(){
+				let currentRx = krpano.get("hotspot['hotspot_3'].ath")
+				let nextRx = currentRx - 3
+				krpano.set("hotspot['hotspot_3'].ath", nextRx);
+				// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+				console.log(krpano.get("hotspot['hotspot_3'].ath"))
+			})
+			document.querySelector('.atv-').addEventListener('click',function(){
+				let currentRx = krpano.get("hotspot['hotspot_3'].atv")
+				let nextRx = currentRx - 3
+				krpano.set("hotspot['hotspot_3'].atv", nextRx);
+				// currentRx = krpano.get("hotspot['hotspot_3'].rx")
+				console.log(krpano.get("hotspot['hotspot_3'].atv"))
+			})
 
 			function add_hotspot(hotspot) {
 				//하나의 객체가 들어옴
-				const {id,type, position, actionUrl, targetPano, img, size} = hotspot;
+				const {id,includeingPano,targetPano, img, type, size, position, actionUrl} = hotspot;
 				if (krpano) {
 					const {ath,atv,ox,oy} = position
 					let hs_name = "hs" + ((Date.now() + Math.random()) | 0);	// create unique/randome name (나중에 poi editor에서 쓰일 예정)
-					krpano.call("addhotspot(" + id + ")");
-					if (img === "") {
-						krpano.set("hotspot[" + id + "].url", "./skin/vtourskin_hotspot.png");
-						krpano.set("hotspot[" + id + "].ath", ath);
-						krpano.set("hotspot[" + id + "].scale", "0.7");
-						krpano.set("hotspot[" + id + "].atv", atv);
-						krpano.set("hotspot[" + id + "].distorted", true);
-					} else {
-						const {width, height} = size
-						krpano.set("hotspot[" + id + "].url", `./skin/${img}`);
-						krpano.set("hotspot[" + id + "].ath", ath);
-						krpano.set("hotspot[" + id + "].atv", atv);
-						krpano.set("hotspot[" + id + "].width", width);
-						krpano.set("hotspot[" + id + "].height", height);
-						krpano.set("hotspot[" + id + "].ox", ox);
-						krpano.set("hotspot[" + id + "].oy", oy);
-						krpano.set("hotspot[" + id + "].distorted", true);
-						// krpano.set("hotspot[" + id + "].enabled", false);
-					}
+					let {width, height} = size;
+
 					switch (type) {
 						case "popup":
+							console.log(id);
+							krpano.call("addhotspot(" + id + ")");
+							krpano.set("hotspot[" + id + "].url", `./skin/${img}`);
+							krpano.set("hotspot[" + id + "].ath", ath);
+							krpano.set("hotspot[" + id + "].atv", atv);
+							krpano.set("hotspot[" + id + "].width", width);
+							krpano.set("hotspot[" + id + "].height", height);
+							krpano.set("hotspot[" + id + "].ox", ox);
+							krpano.set("hotspot[" + id + "].oy", oy);
+							krpano.set("hotspot[" + id + "].zorder", "999");
+							krpano.set("hotspot[" + id + "].distorted", true);
 							krpano.set("hotspot[" + id + "].onclick", function (hs) {
 								showPopup(actionUrl)
 							}.bind(null, id));
 							break;
 						case "teleport":
-						krpano.set("hotspot[" + id + "].onclick", function (hs) {
-							krpano.call(`loadscene(${targetPano}, null, MERGE, BLEND(0.35))`);
+							console.log(id);
+							krpano.call("addhotspot(" + id + ")");
+							krpano.set("hotspot[" + id + "].url", "./skin/vtourskin_hotspot.png");
+							krpano.set("hotspot[" + id + "].ath", ath);
+							krpano.set("hotspot[" + id + "].scale", "0.7");
+							krpano.set("hotspot[" + id + "].atv", atv);
+							krpano.set("hotspot[" + id + "].distorted", true);
+							krpano.set("hotspot[" + id + "].onclick", function (hs) {
+								krpano.call(`loadscene(${targetPano}, null, MERGE, BLEND(0.35))`);
 							}.bind(null, id));
+							break;
+						case "sticker":
+							console.log(width)
+							krpano.set("hotspot[" + id + "].width", width);
+							krpano.set("hotspot[" + id + "].height", height);
+							krpano.call("addhotspot(" + id + ")");
+							krpano.set("hotspot[" + id + "].url", `./skin/sticker/${includeingPano}/${img}`);
+							krpano.set("hotspot[" + id + "].ath", ath);
+							krpano.set("hotspot[" + id + "].atv", atv);
+							krpano.set("hotspot[" + id + "].ox", ox);
+							krpano.set("hotspot[" + id + "].oy", oy);
+							krpano.set("hotspot[" + id + "].scale", "1");
+							krpano.set("hotspot[" + id + "].zorder", "-1");
+							krpano.set("hotspot[" + id + "].distorted", true);
+							krpano.set("hotspot[" + id + "].enabled", false);
 						default:
 							break;
 					}
@@ -391,6 +433,7 @@
 			}
 			// type === popup hotspot 클릭 이벤트
 			function showPopup(url) {
+				console.log(url)
 				const container = document.createElement('div');
 				container.classList.add('popup');
 				const topWrap = document.createElement('div');

@@ -503,7 +503,7 @@
 				set(scene[get(i)].thumbindex, get(i));
 				inc(thumbcount);
 			);
-				<!-- trace(thumbarray.count); -->
+				<!-- trace(scene[get(i)].sceneindex); -->
 		);
 		<!-- trace(thumbcount); -->
 		<!-- scene[get(i)].skipthumb != true -->
@@ -536,7 +536,7 @@
 				
 					copy(currentscene, thumbarray[get(i)]);
 
-					calc(thumbname, 'skin_thumb_' + i);
+					calc(thumbname, 'skin_thumb_' + thumbarray[get(i)].sceneindex);
 					addlayer(get(thumbname));
 					<!-- trace(get(thumbname)); -->
 					set(layer[get(thumbname)],
