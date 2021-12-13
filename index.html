@@ -75,6 +75,19 @@
 			font-size: 24px;
 			color: #000;
 		}
+		.thumbs_category_group {
+			display: flex;
+			justify-content: center;
+			transform: translateY(-140%) !important;
+			height: fit-content !important;
+		}
+		.thumbs_category_group > .group_title {
+			position: relative !important;
+			
+		}
+		.thumbs_category_group > .group_title:not(:first-of-type) {
+			margin-left: 20px;
+		}
 	</style>
 </head>
 
@@ -359,6 +372,7 @@
 						krpano.set("hotspot[" + id + "].ox", ox);
 						krpano.set("hotspot[" + id + "].oy", oy);
 						krpano.set("hotspot[" + id + "].distorted", true);
+						// krpano.set("hotspot[" + id + "].enabled", false);
 					}
 					switch (type) {
 						case "popup":

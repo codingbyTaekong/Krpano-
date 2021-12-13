@@ -91,13 +91,7 @@
 
 	</scene>
 
-	<scene name="scene_02" title="02" onstart="load_all_hotspot()" thumburl="panos/02.tiles/thumb.jpg" lat="" lng="" heading="" group="test">
-		<!-- <hotspot name="arrow_to_18" url="./skin/video.png" scale="0.31" ath="18.886719297871593" atv="-9.807028074069867" rx="0" ry="10" rz="0" zorder="14" >
-			<point ath="-6.968602" atv="-7.787864" />
-			<point ath="8.587194" atv="-7.753561" />
-			<point ath="7.840611" atv="6.402655" />
-			<point ath="-7.471131" atv="6.162498" />
-		</hotspot> -->
+	<scene name="scene_02" title="02" onstart="load_all_hotspot()" thumburl="panos/02.tiles/thumb.jpg" lat="" lng="" heading="" group="홀">
 
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -111,7 +105,7 @@
 
 	</scene>
 
-	<scene name="scene_03" title="03" onstart="" thumburl="panos/03.tiles/thumb.jpg" lat="" lng="" heading="" group="test">
+	<scene name="scene_03" title="03" onstart="load_all_hotspot()" thumburl="panos/03.tiles/thumb.jpg" lat="" lng="" heading="" group="test">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -125,7 +119,7 @@
 
 	</scene>
 
-	<scene name="scene_04" title="04" onstart="" thumburl="panos/04.tiles/thumb.jpg" lat="" lng="" heading="" group="test">
+	<scene name="scene_04" title="04" onstart="load_all_hotspot()" thumburl="panos/04.tiles/thumb.jpg" lat="" lng="" heading="" group="test">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -139,7 +133,7 @@
 
 	</scene>
 
-	<scene name="scene_05" title="05" onstart="" thumburl="panos/05.tiles/thumb.jpg" lat="" lng="" heading="" group="test">
+	<scene name="scene_05" title="05" onstart="load_all_hotspot()" thumburl="panos/05.tiles/thumb.jpg" lat="" lng="" heading="" group="test">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -153,7 +147,7 @@
 
 	</scene>
 
-	<scene name="scene_06" title="06" onstart="" thumburl="panos/06.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_06" title="06" onstart="load_all_hotspot()" thumburl="panos/06.tiles/thumb.jpg" lat="" lng="" heading="" group="test">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -167,7 +161,7 @@
 
 	</scene>
 
-	<scene name="scene_07" title="07" onstart="" thumburl="panos/07.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_07" title="07" onstart="load_all_hotspot()" thumburl="panos/07.tiles/thumb.jpg" lat="" lng="" heading="" group="test">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -181,7 +175,7 @@
 
 	</scene>
 
-	<scene name="scene_08" title="08" onstart="" thumburl="panos/08.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_08" title="08" onstart="load_all_hotspot()" thumburl="panos/08.tiles/thumb.jpg" lat="" lng="" heading="" group="test">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -195,7 +189,7 @@
 
 	</scene>
 
-	<scene name="scene_09" title="09" onstart="" thumburl="panos/09.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_09" title="09" onstart="load_all_hotspot()" thumburl="panos/09.tiles/thumb.jpg" lat="" lng="" heading="" group="홀">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -209,7 +203,7 @@
 
 	</scene>
 
-	<scene name="scene_10" title="10" onstart="" thumburl="panos/10.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_10" title="10" onstart="load_all_hotspot()" thumburl="panos/10.tiles/thumb.jpg" lat="" lng="" heading="" group="홀">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -223,7 +217,7 @@
 
 	</scene>
 
-	<scene name="scene_11" title="11" onstart="" thumburl="panos/11.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_11" title="11" onstart="load_all_hotspot()" thumburl="panos/11.tiles/thumb.jpg" lat="" lng="" heading="" group="홀">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -237,7 +231,7 @@
 
 	</scene>
 
-	<scene name="scene_12" title="12" onstart="" thumburl="panos/12.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_12" title="12" onstart="" thumburl="panos/12.tiles/thumb.jpg" lat="" lng="" heading="" group="tttt">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
